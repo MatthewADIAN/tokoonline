@@ -27,9 +27,9 @@ public class MainController {
 
     @GetMapping("")
     public String index(Model model) {
-        model.addAttribute("roti", new Roti());
-        model.addAttribute("RotiKiriman", service.getAll());
-        return "index";
+        //model.addAttribute("roti", new Roti());
+        //model.addAttribute("RotiKiriman", service.getAll());
+        return "home";
     }
 
     @GetMapping("/{id}")
